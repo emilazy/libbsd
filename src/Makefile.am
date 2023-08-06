@@ -95,7 +95,6 @@ libbsd_la_SOURCES = \
 	local-link.h \
 	merge.c \
 	pidfile.c \
-	progname.c \
 	pwcache.c \
 	radixsort.c \
 	readpassphrase.c \
@@ -134,6 +133,12 @@ libbsd_la_SOURCES += \
 	arc4random_unix.h \
 	arc4random_win.h \
 	chacha_private.h \
+	# EOL
+endif
+
+if NEED_PROGNAME
+libbsd_la_SOURCES += \
+	progname.c \
 	# EOL
 endif
 
